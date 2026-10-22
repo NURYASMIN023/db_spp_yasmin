@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+    background: #eee;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    border: 0;
+    background: #dedede;
+    height: 1px;
+}
+
+header {
+    text-align: center;
+    color: #232323;
+}
+
+header.judul {
+    font-size: 17pt;
+}
+
+header.deskripsi {
+    font-size: 11pt;
+}
+
+.wrap {
+    width: 1300px;
+    margin: 25px auto;
+}
+
+nav.menu ul {
+    overflow: hidden;
+    color: #fff;
+    list-style: none;
+    float: left;
+    padding: 0;
+    width: 1300px;
+    margin: 0;
+    background: #f7a32d;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+    box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+}
+
+nav.menu ul li {
+    margin: 0;
+    float: left;
+}
+
+nav.menu ul a {
+    padding: 25px;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+nav.menu ul a:hover {
+    text-decoration: underline;
+    background: #f7a32d;
+}
+
+.sidebar {
+    float: right;
+    width: 275px;
+}
+
+.sidebar .widget {
+    padding: 25px;
+    margin: 25px auto;
+    background: #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s ease;
+    font-size: 14px;
+}
+
+.sidebar .widget h2 {
+    padding: 0;
+    margin: 0 0 15px;
+    color: #3498db;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.blog {
+    float: left;
+}
+
+.conteudo {
+    width: 950px;
+    padding: 25px;
+    margin: 25px auto;
+    background: #fff;
+    border: 1px solid #dedede;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.35);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.35);
+    box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.35);
+}
+
+.conteudo h1 {
+    padding: 0;
+    margin: 0 0 15px;
+    font-weight: normal;
+    color: #666;
+    font-family: Georgia, serif;
+}
+
+/* Perbaikan Media Query */
+@media (max-width: 1300px) {
+    .header {
+        position: inherit;
+    }
+    .wrap {
+        width: 90%;
+        margin: 25px auto;
+    }
+    .sidebar {
+        width: 100%;
+        margin: 25px 0 0;
+        float: none;
+    }
+
+    .sidebar .widget {
+        padding: 5%;
+    }
+
+    nav.menu ul {
+        width: 100%;
+        float: inherit;
+    }
+
+    nav.menu ul li {
+        float: inherit;
+        margin: 0;
+    }
+    
+    nav.menu ul a {
+        padding: 15px;
+        font-size: 16px;
+        border-top: 1px solid #1abf9f;
+        border-bottom: 1px solid #16a085;
+    }
+    
+    .blog {
+        width: 100%;
+    }
+    
+    .conteudo {
+        float: inherit;
+        margin: 0 auto 25px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #dedede;
+        padding: 15px;
+        background: #fff;
+    }
+}
